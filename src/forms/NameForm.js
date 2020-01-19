@@ -25,7 +25,7 @@ export default class NameForm extends React.Component {
                     <input name="name" value={this.state.name} onChange={this.handleChange} />
                 </label>
                 <label>
-                    Nom :
+                    Prenom :
                     <input name="prenom" value={this.state.prenom} onChange={this.handleChange} />
                 </label>
                 <label>

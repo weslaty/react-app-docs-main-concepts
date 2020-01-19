@@ -6,6 +6,7 @@ import LoginControl from './LoginControl';
 import MailBox from './MailBox';
 import MapRender from './MapRender'
 import NameForm from './forms/NameForm'
+import Calculator from './Calculator'
 import './App.css';
 
 function App() {
@@ -36,13 +37,13 @@ function App() {
               <td><Welcome name="Michel Dupont" /></td>
               <td><MailBox unreadMessages={messages} /></td>
               <td><MapRender numbers={[3, 5, 7, 9, 11]} /></td>
-              <td></td>
+              <td><Calculator/></td>
             </tr>
           </tbody>
         </table>
       </header>
     </div>
-  );
-}
-
-export default App;
+      );
+    }
+    
+    export default App;
