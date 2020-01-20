@@ -7,6 +7,9 @@ import MailBox from './MailBox';
 import MapRender from './MapRender'
 import NameForm from './forms/NameForm'
 import Calculator from './Calculator'
+import WelcomeDialog from './composition/WelcomeDialog'
+import SplitPane from './composition/SplitPane'
+import SignUpDialog from './specialisation/SignUpDialog'
 import './App.css';
 
 function App() {
@@ -37,13 +40,23 @@ function App() {
               <td><Welcome name="Michel Dupont" /></td>
               <td><MailBox unreadMessages={messages} /></td>
               <td><MapRender numbers={[3, 5, 7, 9, 11]} /></td>
-              <td><Calculator/></td>
+              <td><Calculator /></td>
+            </tr>
+            <tr>
+              <td><WelcomeDialog /></td>
+              <td><SplitPane left={<Clock />}
+                right={<Welcome name={1 + 2 + "Expression inside another expression"} />}
+              />
+              </td>
+              <td><SignUpDialog/></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
       </header>
     </div>
-      );
-    }
-    
-    export default App;
+  );
+}
+
+export default App;

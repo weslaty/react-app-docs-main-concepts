@@ -1,11 +1,11 @@
 import React from 'react'
 
 function UserGreeting(props) {
-    return <h1>Bienvenue !</h1>;
+    return <h5>Bienvenue !</h5>;
 }
 
 function GuestGreeting(props) {
-    return <h1>Veuillez vous inscrire.</h1>;
+    return <h5>Veuillez vous inscrire.</h5>;
 }
 
 function Greeting(props) {
